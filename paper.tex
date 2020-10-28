@@ -1,0 +1,62 @@
+\documentclass[sigconf]{acmart}
+\newcommand{\verbatimfont}[1]{\renewcommand{\verbatim@font}{\ttfamily#1}}
+\def\BibTeX{{\rm B\kern-.05em{\sc i\kern-.025em b}\kern-.08emT\kern-.1667em\lower.7ex\hbox{E}\kern-.125emX}}
+\usepackage{mathptmx}
+\usepackage{graphicx}
+\usepackage{lipsum}
+
+\begin{document}
+
+\title{Code Reuse in Cryptocurrencies}
+
+\author{Keira Haskins}
+\email{keirahaskins@cs.unm.edu}
+\affiliation{%
+  \institution{Department of Computer Science\\The University of New Mexico}
+  \streetaddress{1901 Redondo S Dr}
+  \city{Albuquerque}
+  \state{New Mexico}
+  \postcode{87106}
+}
+
+\author{Marie Vasek}
+\email{m.vasek@ucl.ac.uk}
+\affiliation{%
+  \institution{Department of Computer Science\\ University College London}
+  \streetaddress{Gower Street}
+  \city{London}
+  \state{WC1E 6BT}
+}
+
+%\author{Patrick Bridges}
+%\email{patrickb@unm.edu}
+%\affiliation{%
+%  \institution{The University of New Mexico, %Department of Computer Science}
+%  \streetaddress{1901 Redondo S Dr}
+%  \city{Albuquerque}
+ % \state{New Mexico}
+ % \postcode{87106}
+%}
+
+\renewcommand{\shortauthors}{Keira Haskins and Marie Vasek}
+
+%\begin{abstract}
+
+%\end{abstract}
+
+\ccsdesc{Cybersecurity and Cryptocurrency}
+
+%\keywords{Ethereum, Cryptocurrency, Vulnerability, Smart Contract}
+
+\maketitle
+
+\input{paper/introduction}
+\input{paper/methodology}
+\input{paper/analysis}
+\input{paper/back}
+\input{paper/conc}
+
+\nocite{*}
+\bibliographystyle{acm}
+\bibliography{bibliography}
+\end{document}
